@@ -9,7 +9,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            background-color: #0c0c0c; /* Negro profundo para lujo */
+            background-color: #0c0c0c; 
             color: #ffffff;
             font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
@@ -31,12 +31,10 @@
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            /* Vinculación con tu imagen de GitHub */
             background-image: url('hero-cafe.jpeg'); 
             background-size: cover;
             background-position: center;
-            /* El filtro de brillo bajo crea el aura de misterio y poder */
-            filter: brightness(40%) contrast(115%); 
+            filter: brightness(35%) contrast(120%); 
             z-index: 1;
         }
 
@@ -50,30 +48,43 @@
             font-family: 'Cinzel', serif;
             font-size: clamp(2.5rem, 8vw, 4.5rem);
             letter-spacing: 12px;
-            color: #d4af37; /* Dorado institucional */
+            color: #d4af37; 
             text-transform: uppercase;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.7);
         }
 
         .gold-divider {
-            width: 80px;
+            width: 100px;
             height: 1px;
             background: #d4af37;
-            margin: 20px auto;
+            margin: 15px auto;
         }
 
-        .hero p {
-            font-size: 1rem;
-            letter-spacing: 5px;
+        /* ESTILO DEL ESCLOGAN (EL CAFÉ DE LOS GRANDES) */
+        .eslogan-shelby {
+            font-family: 'Cinzel', serif;
+            font-size: 1.6rem;
+            letter-spacing: 6px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        /* ESTILO DE LOS VALORES (TRADICIÓN, PODER, PRESTIGIO) */
+        .valores-prestigio {
+            font-size: 0.8rem;
+            letter-spacing: 8px;
             text-transform: uppercase;
             font-weight: 200;
-            color: #f1f1f1;
+            color: #d4af37;
+            opacity: 0.9;
         }
 
-        /* --- SECCIÓN HISTORIA (TRADICIÓN) --- */
+        /* --- SECCIÓN HISTORIA --- */
         .story-section {
-            background-color: #f4f1ea; /* Fondo crema artesanal */
+            background-color: #f4f1ea; 
             color: #1a1a1a;
             padding: 80px 25px;
             text-align: center;
@@ -81,7 +92,7 @@
 
         h2 {
             font-family: 'Cinzel', serif;
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: #2b1b17;
             margin-bottom: 30px;
             letter-spacing: 4px;
@@ -91,24 +102,23 @@
         .story-text {
             max-width: 700px;
             margin: 0 auto 50px auto;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             font-weight: 400;
-            color: #444;
+            color: #333;
         }
 
-        /* --- CONTENEDOR DE AUDIO PREMIUM --- */
         .audio-container {
             background: #ffffff;
             border: 1px solid #d4af37;
             padding: 40px 20px;
             max-width: 500px;
             margin: 0 auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
 
         h3 {
             font-family: 'Cinzel', serif;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 15px;
             color: #2b1b17;
         }
@@ -116,21 +126,21 @@
         audio {
             width: 100%;
             margin-top: 20px;
-            filter: sepia(20%) contrast(90%); /* Suaviza el look del reproductor */
+            filter: sepia(30%) contrast(90%); 
         }
 
         footer {
-            padding: 40px;
+            padding: 50px;
             background-color: #0c0c0c;
             text-align: center;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            color: #666;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            color: #555;
             text-transform: uppercase;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
+            from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
@@ -140,8 +150,12 @@
     <header class="hero">
         <div class="overlay">
             <h1>CR CUMBRE REAL</h1>
+            
             <div class="gold-divider"></div>
-            <p>Tradición • Poder • Prestigio</p>
+            
+            <p class="eslogan-shelby">El café de los grandes</p>
+            
+            <p class="valores-prestigio">Tradición • Poder • Prestigio</p>
         </div>
     </header>
 
@@ -150,13 +164,13 @@
         <p class="story-text">
             Este café es el resultado de generaciones de tradición artesanal, 
             perfeccionada con la precisión de la ingeniería moderna para los 
-            paladares más exigentes.
+            paladares que no aceptan menos que la excelencia.
         </p>
         
         <div class="audio-container">
             <h3>Escucha nuestra historia</h3>
-            <p style="font-weight: 200; font-size: 0.9rem; color: #888; margin-bottom: 10px;">
-                De la voz de quien cuida la tierra
+            <p style="font-weight: 200; font-size: 0.9rem; color: #777; margin-bottom: 10px;">
+                Relatada por el guardián de la tierra
             </p>
             <audio controls>
                 <source src="historia-productor.mp3" type="audio/mpeg">
@@ -166,7 +180,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 CR CUMBRE REAL. MARCA REGISTRADA.</p>
+        <p>&copy; 2026 CR CUMBRE REAL. TODO EL PODER AL PRODUCTOR.</p>
     </footer>
 
 </body>
