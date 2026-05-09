@@ -61,7 +61,6 @@
             margin: 15px auto;
         }
 
-        /* ESTILO DEL ESCLOGAN (EL CAFÉ DE LOS GRANDES) */
         .eslogan-shelby {
             font-family: 'Cinzel', serif;
             font-size: 1.6rem;
@@ -72,7 +71,6 @@
             margin-bottom: 10px;
         }
 
-        /* ESTILO DE LOS VALORES (TRADICIÓN, PODER, PRESTIGIO) */
         .valores-prestigio {
             font-size: 0.8rem;
             letter-spacing: 8px;
@@ -129,14 +127,51 @@
             filter: sepia(30%) contrast(90%); 
         }
 
+        /* --- FOOTER ESTILO NESPRESSO / SHELBY --- */
         footer {
-            padding: 50px;
+            padding: 60px 20px;
             background-color: #0c0c0c;
             text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .social-links {
+            margin-bottom: 25px;
+        }
+
+        .social-links span {
+            display: block;
+            color: #666;
             font-size: 0.75rem;
             letter-spacing: 3px;
-            color: #555;
+            margin-bottom: 15px;
             text-transform: uppercase;
+        }
+
+        .instagram-link {
+            color: #d4af37;
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            display: inline-block;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 5px;
+        }
+
+        .instagram-link:hover {
+            color: #ffffff;
+            border-bottom: 1px solid #d4af37;
+            letter-spacing: 6px;
+        }
+
+        .legal-text {
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: #444;
+            text-transform: uppercase;
+            margin-top: 20px;
         }
 
         @keyframes fadeIn {
@@ -150,11 +185,8 @@
     <header class="hero">
         <div class="overlay">
             <h1>CR CUMBRE REAL</h1>
-            
             <div class="gold-divider"></div>
-            
             <p class="eslogan-shelby">El café de los grandes</p>
-            
             <p class="valores-prestigio">Tradición • Poder • Prestigio</p>
         </div>
     </header>
@@ -180,7 +212,14 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 CR CUMBRE REAL. TODO EL PODER AL PRODUCTOR.</p>
+        <div class="social-links">
+            <span>Sigue el legado en:</span>
+            <a href="https://www.instagram.com/tu_usuario" target="_blank" class="instagram-link">
+                INSTAGRAM
+            </a>
+        </div>
+        <div class="gold-divider" style="width: 40px; opacity: 0.2; margin: 20px auto;"></div>
+        <p class="legal-text">&copy; 2026 CR CUMBRE REAL. TODO EL PODER AL PRODUCTOR.</p>
     </footer>
 
 </body>
