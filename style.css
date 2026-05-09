@@ -35,7 +35,8 @@ body {
     background-image: url('hero-cafe.jpeg'); 
     background-size: cover;
     background-position: center;
-    filter: brightness(35%) contrast(120%); 
+    /* Ajustamos el brillo para que las letras blancas y doradas resalten más en móvil */
+    filter: brightness(30%) contrast(110%); 
     z-index: 1;
 }
 
@@ -43,20 +44,24 @@ body {
     z-index: 2;
     padding: 20px;
     animation: fadeIn 3s ease-out;
+    width: 100%; /* Asegura que el contenido use el ancho disponible */
 }
 
-/* Título Principal */
+/* Título Principal - Optimizado para pantallas pequeñas y grandes */
 h1 {
     font-family: 'Cinzel', serif;
-    font-size: 3.5rem;
-    letter-spacing: 12px;
+    /* El tamaño se ajusta solo: mínimo 1.8rem, máximo 3.5rem */
+    font-size: clamp(1.8rem, 10vw, 3.5rem); 
+    letter-spacing: 8px; 
     color: #d4af37; 
     text-transform: uppercase;
     text-shadow: 2px 2px 15px rgba(0,0,0,0.7);
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 .gold-divider {
-    width: 100px;
+    width: 80px;
     height: 1px;
     background: #d4af37;
     margin: 15px auto;
@@ -65,17 +70,18 @@ h1 {
 /* El Café de los Grandes */
 .eslogan-shelby {
     font-family: 'Cinzel', serif;
-    font-size: 1.6rem;
-    letter-spacing: 6px;
+    font-size: clamp(1rem, 5vw, 1.6rem);
+    letter-spacing: 4px;
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 10px;
+    font-weight: 400;
 }
 
 /* Valores en Dorado */
 .valores-prestigio {
-    font-size: 0.8rem;
-    letter-spacing: 8px;
+    font-size: clamp(0.6rem, 3vw, 0.8rem);
+    letter-spacing: 6px;
     text-transform: uppercase;
     color: #d4af37;
     opacity: 0.9;
@@ -85,32 +91,34 @@ h1 {
 .story-section {
     background-color: #f4f1ea; 
     color: #1a1a1a;
-    padding: 80px 25px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 h2 {
     font-family: 'Cinzel', serif;
-    font-size: 2.2rem;
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
     color: #2b1b17;
     letter-spacing: 4px;
+    margin-bottom: 20px;
 }
 
 .story-text {
     max-width: 700px;
-    margin: 0 auto 50px auto;
-    font-size: 1.15rem;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
     color: #333;
 }
 
-/* --- Contenedor de Audio --- */
+/* --- Contenedor de Audio Premium --- */
 .audio-container {
     background: #ffffff;
     border: 1px solid #d4af37;
-    padding: 40px 20px;
+    padding: 30px 15px;
     max-width: 500px;
     margin: 0 auto;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 2px; /* Esquinas más rectas para un look más serio */
 }
 
 /* --- Animaciones --- */
@@ -120,10 +128,10 @@ h2 {
 }
 
 footer {
-    padding: 50px;
+    padding: 40px 20px;
     background-color: #0c0c0c;
     text-align: center;
-    font-size: 0.75rem;
-    letter-spacing: 3px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
     color: #555;
 }
