@@ -35,7 +35,6 @@ body {
     background-image: url('hero-cafe.jpeg'); 
     background-size: cover;
     background-position: center;
-    /* Ajustamos el brillo para que las letras blancas y doradas resalten más en móvil */
     filter: brightness(30%) contrast(110%); 
     z-index: 1;
 }
@@ -44,13 +43,11 @@ body {
     z-index: 2;
     padding: 20px;
     animation: fadeIn 3s ease-out;
-    width: 100%; /* Asegura que el contenido use el ancho disponible */
+    width: 100%;
 }
 
-/* Título Principal - Optimizado para pantallas pequeñas y grandes */
 h1 {
     font-family: 'Cinzel', serif;
-    /* El tamaño se ajusta solo: mínimo 1.8rem, máximo 3.5rem */
     font-size: clamp(1.8rem, 10vw, 3.5rem); 
     letter-spacing: 8px; 
     color: #d4af37; 
@@ -67,7 +64,6 @@ h1 {
     margin: 15px auto;
 }
 
-/* El Café de los Grandes */
 .eslogan-shelby {
     font-family: 'Cinzel', serif;
     font-size: clamp(1rem, 5vw, 1.6rem);
@@ -78,7 +74,6 @@ h1 {
     font-weight: 400;
 }
 
-/* Valores en Dorado */
 .valores-prestigio {
     font-size: clamp(0.6rem, 3vw, 0.8rem);
     letter-spacing: 6px;
@@ -110,7 +105,6 @@ h2 {
     color: #333;
 }
 
-/* --- Contenedor de Audio Premium --- */
 .audio-container {
     background: #ffffff;
     border: 1px solid #d4af37;
@@ -118,20 +112,59 @@ h2 {
     max-width: 500px;
     margin: 0 auto;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    border-radius: 2px; /* Esquinas más rectas para un look más serio */
+    border-radius: 2px;
+}
+
+/* --- FOOTER: EL SELLO FINAL --- */
+footer {
+    padding: 60px 20px;
+    background-color: #0c0c0c;
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.social-links {
+    margin-bottom: 25px;
+}
+
+.social-links span {
+    display: block;
+    color: #666;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.instagram-link {
+    color: #d4af37;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    transition: all 0.4s ease;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+}
+
+/* Efecto de expansión al pasar el mouse/dedo */
+.instagram-link:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #d4af37;
+    letter-spacing: 6px;
+}
+
+.legal-text {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: #444;
+    text-transform: uppercase;
+    margin-top: 20px;
 }
 
 /* --- Animaciones --- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-footer {
-    padding: 40px 20px;
-    background-color: #0c0c0c;
-    text-align: center;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: #555;
 }
