@@ -105,33 +105,45 @@
             color: #333;
         }
 
-        /* NUEVA ESTRUCTURA DEL CONTENEDOR MULTIMEDIA PROFESIONAL */
-        .media-container {
+        .audio-container {
             background: #ffffff;
             border: 1px solid #d4af37;
-            padding: 30px;
-            max-width: 750px;
+            padding: 40px 20px;
+            max-width: 500px;
             margin: 0 auto;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
 
         h3 {
             font-family: 'Cinzel', serif;
-            font-size: 1.4rem;
-            margin-bottom: 5px;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
             color: #2b1b17;
-            letter-spacing: 2px;
         }
 
-        .video-wrapper {
+        audio {
             width: 100%;
-            aspect-ratio: 16/9;
-            margin-top: 25px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            margin-top: 20px;
+            filter: sepia(30%) contrast(90%); 
         }
 
-        /* --- FOOTER --- */
+        /* --- NUEVA SECCIÓN: VIDEO LEGADO --- */
+        .video-section {
+            background-color: #0c0c0c;
+            padding: 80px 25px;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.05);
+        }
+
+        .video-container {
+            max-width: 850px;
+            margin: 0 auto;
+            aspect-ratio: 16/9;
+            border: 1px solid #d4af37;
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.08);
+        }
+
+        /* --- FOOTER MEJORADO (CON ICONO) --- */
         footer {
             padding: 60px 20px;
             background-color: #0c0c0c;
@@ -206,25 +218,39 @@
         </div>
     </header>
 
-<section class="story-section"> 
-    <h2>Nuestra Herencia</h2> 
-    <p class="story-text"> Este café es el resultado de generaciones de tradición artesanal, perfeccionada con la precisión de la ingeniería moderna para los paladares que no aceptan menos que la excelencia. 
-    </p> <div class="audio-container">
-        <h3>Escucha nuestra historia</h3> <p style="font-weight: 200; font-size: 0.9rem; color: #777; margin-bottom: 10px;"> Relatada por el guardián de la tierra </p> 
-        <audio controls> <source src="historia-productor.mp3" type="audio/mpeg"> Tu navegador no soporta el audio. 
-        </audio> 
-    </div>
-</section> 
+    <section class="story-section">
+        <h2>Nuestra Herencia</h2>
+        <p class="story-text">
+            Este café es el resultado de generaciones de tradición artesanal, 
+            perfeccionada con la precisión de la ingeniería moderna para los 
+            paladares que no aceptan menos que la excelencia.
+        </p>
+        
+        <div class="audio-container">
+            <h3>Escucha nuestra historia</h3>
+            <p style="font-weight: 200; font-size: 0.9rem; color: #777; margin-bottom: 10px;">
+                Relatada por el guardián de la tierra
+            </p>
+            <audio controls>
+                <source src="historia-productor.mp3" type="audio/mpeg">
+                Tu navegador no soporta el audio.
+            </audio>
+        </div>
+    </section>
+
     <!-- SECCIÓN DEL VIDEO DE YOUTUBE -->
-    <section class="video-section"> <h2 style="color: #d4af37; margin-bottom: 40px; letter-spacing: 6px;">NUESTRA LABOR
-    </h2> <div class="video-container"> 
-        <iframe width="100%" height="100%" src="https://youtu.be/DR_AAtG-yTQ?si=NxQb43fwxreIHsY7" title="CR CUMBRE REAL | Legado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border: none;"></iframe> </div> </section>
-            
-           
+    <section class="video-section">
+        <h2 style="color: #d4af37; margin-bottom: 40px; letter-spacing: 6px;">NUESTRA LABOR</h2>
+        <div class="video-container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DR_AAtG-yTQ" title="CR CUMBRE REAL | Legado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border: none;"></iframe>
+        </div>
+    </section>
+
     <footer>
         <div class="social-links">
             <span>Sigue el legado en:</span>
-            <a href="https://www.instagram.com/cafecumbrereal?igsh=b3J1ZmU5NmhwcnN3" target="_blank" class="instagram-link">
+            <!-- Reemplaza "tu_usuario" por tu perfil real de Instagram -->
+            <a href="https://www.instagram.com/tu_usuario" target="_blank" class="instagram-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
